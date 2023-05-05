@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Aniron;
+  src: url("./assets/fonts/Aniron-7BaP.ttf") format("truetype");
+}
