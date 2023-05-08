@@ -1,25 +1,20 @@
-import { NavItems } from "../constants";
-import { NavbarLink } from "./NavbarLink";
+import { NavbarLinks } from "./NavbarLink";
+import { LOTRLogo } from "../assets/LOTRLogo";
 
 export const Navbar = () => {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <span className="self-center font-aniron text-2xl font-semibold whitespace-nowrap dark:text-white">
-            LOTR
-          </span>
-        </a>
+    <nav className="w-full">
+      <div className="w-9/12 mx-auto p-4">
+        <div className="flex flex-col items-center justify-center lg:flex-row sm:justify-between lg:items-center">
+          <div className="text-center lg:text-left">
+            <a href="/">
+              <LOTRLogo />
+            </a>
+          </div>
 
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="mobile-menu-language-select"
-        >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {NavItems.map((label: string) => (
-              <NavbarLink label={label} />
-            ))}
-          </ul>
+          <div className="flex flex-row mt-4 lg:mt-0">
+            <NavbarLinks />
+          </div>
         </div>
       </div>
     </nav>

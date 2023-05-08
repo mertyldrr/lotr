@@ -1,13 +1,56 @@
-type Props = {
-  label: string;
-};
+import { useNavigate } from "react-router-dom";
+import { useTableStore } from "../store/store";
 
-export const NavbarLink = ({ label }: Props) => {
+export const NavbarLinks = () => {
+  const navigate = useNavigate();
+  const resetPagination = useTableStore((store) => store.reset);
+
   return (
-    <li>
-      <button className="block font-aniron py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-        {label}
-      </button>
-    </li>
+    <ul className="flex flex-row p-4 space-x-4 lg:space-x-16">
+      <li>
+        <button
+          className="block font-aniron p-0 text-lotrYellow lg:py-2"
+          onClick={() => {
+            resetPagination();
+            navigate("/books");
+          }}
+        >
+          <span className="text-xs md:text-base">Books</span>
+        </button>
+      </li>
+      <li>
+        <button
+          className="block font-aniron p-0 text-lotrYellow lg:py-2"
+          onClick={() => {
+            resetPagination();
+            navigate("/movies");
+          }}
+        >
+          <span className="text-xs md:text-base">Movies</span>
+        </button>
+      </li>
+      <li>
+        <button
+          className="block font-aniron p-0 text-lotrYellow lg:py-2"
+          onClick={() => {
+            resetPagination();
+            navigate("/characters");
+          }}
+        >
+          <span className="text-xs md:text-base">Characters</span>
+        </button>
+      </li>
+      <li>
+        <button
+          className="block font-aniron p-0 text-lotrYellow lg:py-2"
+          onClick={() => {
+            resetPagination();
+            navigate("/quotes");
+          }}
+        >
+          <span className="text-xs md:text-base">Quotes</span>
+        </button>
+      </li>
+    </ul>
   );
 };
