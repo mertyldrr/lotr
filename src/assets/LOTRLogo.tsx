@@ -1,5 +1,4 @@
-import * as React from "react";
-export const LOTRLogo = (props) => (
+export const LOTRLogo = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
