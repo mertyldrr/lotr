@@ -7,7 +7,7 @@ export const Navbar = () => {
       <div className="w-9/12 mx-auto p-4">
         <div className="flex flex-col items-center justify-center lg:flex-row sm:justify-between lg:items-center">
           <div className="text-center lg:text-left">
-            <a href="/">
+            <a href="/lotr">
               <LOTRLogo />
             </a>
           </div>
