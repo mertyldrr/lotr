@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lotr/static/css/main.df59075b.css",
-    "main.js": "/lotr/static/js/main.024c5dc1.js",
+    "main.js": "/lotr/static/js/main.777ff8e0.js",
     "static/media/Aniron-7BaP.ttf": "/lotr/static/media/Aniron-7BaP.1153b7f358f58c6ba6df.ttf",
     "index.html": "/lotr/index.html",
     "main.df59075b.css.map": "/lotr/static/css/main.df59075b.css.map",
-    "main.024c5dc1.js.map": "/lotr/static/js/main.024c5dc1.js.map"
+    "main.777ff8e0.js.map": "/lotr/static/js/main.777ff8e0.js.map"
   },
   "entrypoints": [
     "static/css/main.df59075b.css",
-    "static/js/main.024c5dc1.js"
+    "static/js/main.777ff8e0.js"
   ]
 }
