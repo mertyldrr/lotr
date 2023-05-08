@@ -14,7 +14,7 @@ export const Table = ({ data, headers, headerOrder, rowsPerPage }: Props) => {
         <thead className="text-xs text-gray-400 uppercase bg-yellow-950">
           <tr>
             {headers.map((header, index) => (
-              <th key={index} scope="col" className="px-3 py-2 lg:px-6 lg:py-3">
+              <th key={index} scope="col" className="px-3 py-2 lg:px-3 lg:py-3">
                 {header}
               </th>
             ))}
