@@ -72,7 +72,7 @@ export const RandomQuote = () => {
           <p className="self-start text-green-500 font-bilbo text-lg md:text-4xl">
             {quote.movie}
           </p>
-          <p className="p-8 font-bilbo text-white text-2xl md:text-6xl">
+          <p className="p-8 font-bilbo text-white text-3xl md:text-6xl">
             "{quote.dialog}"
           </p>
           <p className="self-end font-bilbo text-lotrYellow text-lg md:text-4xl">

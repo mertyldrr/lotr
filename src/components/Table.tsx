@@ -28,7 +28,10 @@ export const Table = ({ data, headers, headerOrder, rowsPerPage }: Props) => {
             >
               {headerOrder.map((key) =>
                 key === "wikiUrl" ? (
-                  <td key={key} className="px-3 py-2 break-all lg:px-4 lg:py-3">
+                  <td
+                    key={key}
+                    className="px-3 py-2 lg:px-4 lg:py-3 lg:break-all"
+                  >
                     <a
                       href={row[key]}
                       className="font-medium text-neutral-500 hover:underline"
