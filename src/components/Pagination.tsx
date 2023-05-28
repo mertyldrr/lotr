@@ -11,20 +11,14 @@ export const Pagination = ({ rowsPerPage }: Props) => {
   const currentPage = useTableStore((store) => store.currentPage);
   const itemsPerPage = rowsPerPage ? rowsPerPage : totalEntries;
   return (
-    <div className="flex flex-col items-center py-6">
-      <span className="text-sm text-gray-700 dark:text-gray-400">
+    <div className="flex flex-col items-center py-6 text-gray-300">
+      <span className="text-sm">
         Showing{" "}
-        <span className="font-semibold text-gray-900 dark:text-white">
+        <span className="font-semibold">
           {(currentPage - 1) * itemsPerPage + 1}{" "}
         </span>
-        to{" "}
-        <span className="font-semibold text-gray-900 dark:text-white">
-          {currentPage * itemsPerPage}{" "}
-        </span>
-        of{" "}
-        <span className="font-semibold text-gray-900 dark:text-white">
-          {totalEntries}{" "}
-        </span>
+        to <span className="font-semibold">{currentPage * itemsPerPage} </span>
+        of <span className="font-semibold">{totalEntries} </span>
         Entries
       </span>
       <div className="inline-flex xs:mt-0 py-3">
